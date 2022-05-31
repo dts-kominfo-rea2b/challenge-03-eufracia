@@ -22,15 +22,13 @@ const dataBelanjaan = [
 
 // boleh dimodifikasi bila ingin menggunakan deklarasi fungsi yang normal
 const listBelanjaan = (itemBelanja) => {
-  return itemBelanja.map(item => `'- ${item.nama} x ${item.kuantitas}',`);
+  return itemBelanja.map(item => `'- ${item.nama} x ${item.kuantitas}'`);
 };
 
 // boleh dimodifikasi bila ingin menggunakan deklarasi fungsi yang normal
 const totalBelanjaan = (totalBelanja) => {
-  return totalBelanja.map(total => total.harga * total.kuantitas);
+  return totalBelanja.map(parseInt(total => total.harga * total.kuantitas));
 };
-
-
 
 // ! JANGAN DIMODIFIKASI
 const main = () => {
