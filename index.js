@@ -31,6 +31,7 @@ const totalBelanjaan = (totalBelanja) => {
 };
 
 
+
 // ! JANGAN DIMODIFIKASI
 const main = () => {
   console.log("Selamat datang customer");
