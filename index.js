@@ -22,7 +22,9 @@ const dataBelanjaan = [
 
 // boleh dimodifikasi bila ingin menggunakan deklarasi fungsi yang normal
 const listBelanjaan = (itemBelanja) => {
-  return itemBelanja.map(item => `'- ${item.nama} x ${item.kuantitas}'`);
+  let arrayBelanja = [];
+    arrayBelanja = itemBelanja.map(item => `- ${item.nama} x ${item.kuantitas}`);
+    return arrayBelanja;
 };
 
 // boleh dimodifikasi bila ingin menggunakan deklarasi fungsi yang normal
